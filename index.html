@@ -23,7 +23,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
     <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/logger/dist/alt-javascript-loggerfactory-iife.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/config/dist/alt-javascript-configfactory-iife.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/lang/dist/alt-javascript-lang-iife.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/lang@1.0.3/dist/alt-javascript-lang-iife.js"></script>
 
 </head>
     <body>
@@ -47,7 +47,7 @@
     </div>
     <script>
         es2020 = true;
-        if (!es.allOk(es.es2020)){
+        if (!lang.allOk(lang.es2020)){
             console.error('We\'re sorry but VueJS & Bootstrap CSS (Minimal) requires JavaScript 11 (ECMAScript 2020). Please upgrade your browser to continue.');
             es2020 = false;
             document.getElementById("no_es2020").style.display = "block";
