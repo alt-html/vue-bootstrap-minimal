@@ -13,6 +13,8 @@ JavaScript, without a supporting build pipeline.
 The intent is to explore the basic principles of single page and progressive web applications, without the cognitive 
 overhead of vertical tooling frameworks.
 
+The example is hosted on GitHub Pages at [https://alt-html.github.io/vue-bootstrap-minimal](https://alt-html.github.io/vue-bootstrap-minimal)
+
 <a name="usage">Usage</a>
 -------------------------
 
