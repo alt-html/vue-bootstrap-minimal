@@ -2,7 +2,7 @@
 const model = {
     text : '',
     loaded : es2020,
-    active : true
+    active : false
 }
 
 const app = Vue.createApp({

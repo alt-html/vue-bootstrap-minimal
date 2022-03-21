@@ -20,9 +20,8 @@
 
     <title>VueJS & Bootstrap CSS (Minimal)</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/logger/dist/alt-javascript-loggerfactory-iife.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/config/dist/alt-javascript-configfactory-iife.js"></script>
+    <script src="https://kit.fontawesome.com/10808f8e76.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@alt-javascript/lang@1.0.3/dist/alt-javascript-lang-iife.js"></script>
 
 </head>
@@ -42,7 +41,15 @@
         </div>
         <main class="d-none p-1" v-bind:class="{'d-block':loaded}">
             <textarea id="text" maxlength="256" placeholder="Type some text here" aria-label="Name" v-model="text"></textarea>
-            <p v-on:click="clicked(event)">{{(text?text:'Typed text will appear here')}}</p>
+            <p >{{(text?text:'Typed text will appear here')}}</p>
+            <p><i class="fa-solid fa-power-on"></i></p>
+            <button id="switch"
+                    class="btn p0 my-0 px-0"
+                    type="button"
+                    v-bind:class="{'btn-primary':active, 'btn-secondary': !active}"
+                    v-on:click="clicked()" >
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+            </button>
         </main>
     </div>
     <script>
